@@ -38,6 +38,7 @@ class MoviesController < ApplicationController
     @movie.director_id = params[:director_id]
     @movie.save
     redirect_to("/movies/"+params[:id])
+    # redirect_to takes a route, not a html template
   end
 
   def destroy
